@@ -6,7 +6,7 @@ public class bj9095 {
 
     public static StringBuilder sb = new StringBuilder();
     public static Integer[] dp2;
-    public static void main (String[] args) throws NumberFormatException, IOException {
+    public static void main (String[] args) throws valueberFormatException, IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
 

@@ -181,12 +181,12 @@ if "$cygwin" || "$msys" ; then
         then
             arg=$( cygpath --path --ignore --mixed "$arg" )
         fi
-        # Roll the args list around exactly as many times as the number of
+        # Roll the args list around exactly as many times as the valueber of
         # args, so each arg winds up back in the position where it started, but
         # possibly modified.
         #
         # NB: a `for` loop captures its iteration list before it begins, so
-        # changing the positional parameters here affects neither the number of
+        # changing the positional parameters here affects neither the valueber of
         # iterations, nor the values presented in `arg`.
         shift                   # remove old arg
         set -- "$@" "$arg"      # push replacement arg
@@ -227,7 +227,7 @@ set -- \
 eval "set -- $(
         printf '%s\n' "$DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS" |
         xargs -n1 |
-        sed ' s~[^-[:alnum:]+,./:=@_]~\\&~g; ' |
+        sed ' s~[^-[:alvalue:]+,./:=@_]~\\&~g; ' |
         tr '\n' ' '
     )" '"$@"'
 
