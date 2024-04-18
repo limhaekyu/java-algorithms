@@ -1,6 +1,6 @@
 package org.programmers;
 
-public class Lv1_덧칧하기 {
+public class Lv1_덧칠하기 {
     public static void main(String[] args) {
         int n = 8;
         int m = 4;
